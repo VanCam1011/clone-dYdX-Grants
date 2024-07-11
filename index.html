@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dYdX Grants</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Logo.png" alt="dYdX Grants" class="logo" />
+            <button class="apply-btn">Apply</button>
+            <div class="menu-icon" id="menuIcon"><i class="fas fa-bars"></i></div>
+        </header>
+        <div class="content">
+            <div class="image-placeholder"></div>
+            <p class="category">Category</p>
+            <h1 class="title">Youtube dYdX Education Library</h1>
+            <div class="status">
+                <span class="status-text">Funded</span>
+                <span class="status-check"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <p class="funding-amount">Funding amount: $5,000</p>
+            <a href="https://www.granttitleproject.com" class="project-link">www.granttitleproject.com <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <footer>
+            <p class="team">Team</p>
+        </footer>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="Logo.png" alt="dYdX Grants" class="sidebar-logo" />
+            <button class="apply-btn">Apply</button>
+            <div class="close-btn" id="closeBtn"><i class="fas fa-times"></i></div>
+        </div>
+        <ul>
+            <li><a href="#">Discover initiatives</a></li>
+            <li><a href="#">Funded grants</a></li>
+            <li><a href="#">Program expenses</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+    </div>
+    <script>
+        const menuIcon = document.getElementById("menuIcon");
+        const sidebar = document.getElementById("sidebar");
+        const closeBtn = document.getElementById("closeBtn");
+
+        menuIcon.addEventListener("click", () => {
+            sidebar.classList.add("open");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.remove("open");
+        });
+    </script>
+</body>
+</html>
